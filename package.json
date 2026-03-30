@@ -1,0 +1,65 @@
+{
+  "name": "@shipitandpray/pretext-editor",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Canvas text editor powered by Pretext — no contenteditable, no DOM text nodes, handles millions of lines.",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js",
+      "require": "./dist/react.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "@chenglou/pretext": ">=0.1.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true },
+    "react-dom": { "optional": true }
+  },
+  "dependencies": {
+    "@chenglou/pretext": "0.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "@types/react": "^19.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  },
+  "author": "ShipItAndPray",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShipItAndPray/pretext-editor"
+  },
+  "keywords": [
+    "editor",
+    "canvas",
+    "pretext",
+    "text-editor",
+    "code-editor",
+    "no-contenteditable"
+  ]
+}
