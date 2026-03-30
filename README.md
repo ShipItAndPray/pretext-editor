@@ -1,5 +1,9 @@
 # @shipitandpray/pretext-editor
 
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://shipitandpray.github.io/pretext-editor/) [![GitHub](https://img.shields.io/github/stars/ShipItAndPray/pretext-editor?style=social)](https://github.com/ShipItAndPray/pretext-editor)
+
+> **[View Live Demo](https://shipitandpray.github.io/pretext-editor/)**
+
 Canvas text editor powered by [Pretext](https://github.com/chenglou/pretext) — no `contenteditable`, no DOM text nodes, handles millions of lines.
 
 ## Why
